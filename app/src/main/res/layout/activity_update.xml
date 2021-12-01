@@ -9,6 +9,7 @@
     android:background="#5AA48C"
     android:orientation="horizontal">
 
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="140dp"
@@ -35,55 +36,59 @@
             android:fontFamily="@font/quicksand"
             android:text="Nama Menu"
             android:textColor="#000000"
-            android:textSize="15sp" />
+            android:textSize="15sp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginRight="10dp" />
 
         <TextView
             android:id="@+id/alamat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Alamat"
             android:layout_marginStart="150dp"
             android:layout_marginTop="35dp"
             android:layout_marginEnd="10dp"
             android:fontFamily="@font/quicksand"
+            android:text="Alamat"
             android:textColor="#000000"
-            android:textSize="15sp"/>
+            android:textSize="15sp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginRight="10dp" />
 
         <TextView
             android:id="@+id/email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Email"
             android:layout_marginStart="150dp"
             android:layout_marginTop="55dp"
             android:layout_marginEnd="10dp"
             android:fontFamily="@font/quicksand"
+            android:text="Email"
             android:textColor="#000000"
-            android:textSize="15sp"/>
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/rating"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Rating"
             android:layout_marginStart="150dp"
             android:layout_marginTop="75dp"
             android:layout_marginEnd="10dp"
             android:fontFamily="@font/quicksand"
+            android:text="Rating"
             android:textColor="#000000"
-            android:textSize="15sp"/>
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/review"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Review"
             android:layout_marginStart="150dp"
             android:layout_marginTop="95dp"
             android:layout_marginEnd="10dp"
             android:fontFamily="@font/quicksand"
+            android:text="Review"
             android:textColor="#000000"
-            android:textSize="15sp"/>
+            android:textSize="15sp" />
 
         <ImageButton
             android:id="@+id/btnDelete"
@@ -106,7 +111,6 @@
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     </androidx.cardview.widget.CardView>
-
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

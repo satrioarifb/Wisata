@@ -8,17 +8,15 @@
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/Wisata/app/src/main/res/font/quicksand.xml" value="0.3148148148148148" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/Wisata/app/src/main/res/font/quicksand_bold.xml" value="0.3148148148148148" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/Wisata/app/src/main/res/font/roboto.xml" value="0.3148148148148148" />
-        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_add.xml" value="0.33" />
-        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_login.xml" value="0.4834983498349835" />
-        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_profile.xml" value="0.33" />
-        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_recycle_view.xml" value="0.2871376811594203" />
-        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_register.xml" value="0.33" />
-        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_update.xml" value="0.2871376811594203" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/Wisata/app/src/main/res/layout/add.xml" value="0.2957427536231884" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/Wisata/app/src/main/res/layout/data.xml" value="0.2957427536231884" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/Wisata/app/src/main/res/layout/login.xml" value="0.2957427536231884" />
-        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/Wisata/app/src/main/res/layout/recycle_view.xml" value="0.2871376811594203" />
-        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/Wisata/app/src/main/res/layout/register.xml" value="0.25" />
+        <entry key="..\:/Users/Tiyah/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/Users/Tiyah/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_profile.xml" value="0.14322916666666666" />
+        <entry key="..\:/Users/Tiyah/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_recycle_view.xml" value="0.14322916666666666" />
+        <entry key="..\:/Users/Tiyah/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_register.xml" value="0.14322916666666666" />
+        <entry key="..\:/Users/Tiyah/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_riau_fantasi.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/Tiyah/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_update.xml" value="0.22" />
       </map>
     </option>
   </component>
