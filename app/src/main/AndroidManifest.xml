@@ -9,7 +9,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Wisata">
-        <activity android:name=".About"></activity>
+        <activity
+            android:name=".register"
+            android:exported="false" />
+        <activity
+            android:name=".recycle_view"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="false" />
+        <activity
+            android:name=".update"
+            android:exported="false" />
+        <activity
+            android:name=".add"
+            android:exported="false" />
+        <activity
+            android:name=".profile"
+            android:exported="false" />
+        <activity android:name=".About" />
         <activity android:name=".Kampoong" />
         <activity android:name=".Pondok" />
         <activity android:name=".Vihara" />
