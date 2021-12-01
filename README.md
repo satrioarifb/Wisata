@@ -1,6 +1,5 @@
 # Wisata
-Projek akhir PAPB
-Anggota Kelompok :
+Anggota Kelompok Projek akhir PAPB :
 1. Fairus Salsabila
 2. Irtiyah Izzaty
 3. Hanif Mujahid
