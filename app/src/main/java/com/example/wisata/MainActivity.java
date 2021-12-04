@@ -2,24 +2,29 @@ package com.example.wisata;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.view.View.OnClickListener;
-import android.content.Intent;
+import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
-    private Button button1;
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    private TextView createAcc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        button1 = (Button)findViewById(R.id.button1);
+        setContentView(R.layout.activity_login);
 
-        button1.setOnClickListener(v -> {
-            Intent intent1 = new Intent(getApplicationContext(),MenuUtama.class);
-            startActivity(intent1);
-        });
+        createAcc = (TextView) findViewById(R.id.btnCreate);
+        createAcc.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.btnCreate:
+                startActivity(new Intent(this, register.class));
+                break;
+        }
     }
 }

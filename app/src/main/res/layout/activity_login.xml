@@ -68,12 +68,12 @@
         android:id="@+id/Email"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:layout_marginTop="184dp"
+        android:layout_marginTop="150dp"
         android:background="@drawable/input"
         android:drawableStart="@drawable/email"
         android:ems="10"
         android:fontFamily="@font/quicksand_bold"
-        android:hint="Email Address"
+        android:hint="  Email Address"
         android:inputType="textEmailAddress"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
@@ -86,16 +86,16 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <EditText
-        android:id="@+id/Fullname"
+        android:id="@+id/Password"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="12dp"
         android:background="@drawable/input"
         android:drawableStart="@drawable/password"
         android:ems="10"
-        android:hint="Password"
+        android:hint="   Password"
         android:inputType="textPassword"
-        android:paddingLeft="20dp"
+        android:paddingLeft="22dp"
         android:paddingRight="20dp"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
@@ -107,10 +107,11 @@
 
     <Button
         android:id="@+id/btnCreate"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginBottom="60dp"
         android:background="#00FFFFFF"
         android:backgroundTint="#FFFFFF"
         android:fontFamily="@font/roboto"
@@ -118,9 +119,7 @@
         android:textColor="#FFFFFF"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Fullname"
-        app:layout_constraintVertical_bias="0.502" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnForget"
@@ -130,7 +129,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="40dp"
         android:layout_marginRight="40dp"
-        android:layout_marginBottom="96dp"
+        android:layout_marginBottom="60dp"
         android:background="#00FFFFFF"
         android:fontFamily="@font/roboto"
         android:text="Forget Password"
@@ -139,17 +138,31 @@
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.152"
         app:layout_constraintStart_toEndOf="@+id/line" />
 
     <ImageView
         android:id="@+id/line"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginBottom="108dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="72dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnCreate"
         app:srcCompat="@drawable/line" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/btncreate"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Password" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

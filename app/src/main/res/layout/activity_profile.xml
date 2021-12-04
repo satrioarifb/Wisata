@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:backgroundTint="#FFFFFF"
-        android:fontFamily="@font/montserrat"
+        android:fontFamily="@font/montserrat_bold"
         android:text="Profil Saya"
         android:textColor="#FFFFFF"
         android:textSize="36sp"
@@ -33,7 +33,7 @@
         app:srcCompat="@drawable/person" />
 
     <EditText
-        android:id="@+id/Fullname"
+        android:id="@+id/Password"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginTop="24dp"
@@ -71,7 +71,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Fullname" />
+        app:layout_constraintTop_toBottomOf="@+id/Password" />
 
     <EditText
         android:id="@+id/Email"
@@ -96,9 +96,10 @@
 
     <Button
         android:id="@+id/edit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="136dp"
+        android:layout_height="45dp"
         android:layout_marginTop="48dp"
+        android:background="@drawable/btncreate"
         android:text="Edit"
         android:textColor="#000000"
         app:backgroundTint="#FFFFFF"
@@ -108,8 +109,10 @@
 
     <Button
         android:id="@+id/logout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="136dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btncreate"
         android:text="Log Out"
         android:textColor="#000000"
         app:backgroundTint="#FFFFFF"
