@@ -27,7 +27,7 @@
             android:textColor="#FFFFFF" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/judul"
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="50dp"
