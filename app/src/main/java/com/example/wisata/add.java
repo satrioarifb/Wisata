@@ -69,7 +69,4 @@ public class add extends AppCompatActivity {
     }
 
     //simpan
-    private void saveImageUpload() {
-
-    }
 }
