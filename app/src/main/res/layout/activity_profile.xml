@@ -97,7 +97,7 @@
     <Button
         android:id="@+id/edit"
         android:layout_width="136dp"
-        android:layout_height="45dp"
+        android:layout_height="48dp"
         android:layout_marginTop="48dp"
         android:background="@drawable/btncreate"
         android:text="Edit"
@@ -110,7 +110,7 @@
     <Button
         android:id="@+id/logout"
         android:layout_width="136dp"
-        android:layout_height="45dp"
+        android:layout_height="48dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/btncreate"
         android:text="Log Out"
