@@ -1,5 +1,6 @@
 package com.example.wisata;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -8,21 +9,27 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
+import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class register extends AppCompatActivity implements View.OnClickListener {
 
     private Button regist;
     private EditText nama, gender, email, password;
-    private FirebaseAuth auth;
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        auth = FirebaseAuth.getInstance();
+        mAuth = FirebaseAuth.getInstance();
 
         regist = (Button) findViewById(R.id.btnDaftar);
         regist.setOnClickListener(this);
@@ -38,51 +45,82 @@ public class register extends AppCompatActivity implements View.OnClickListener 
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.btnDaftar:
-                startActivity(new Intent(this, MainActivity.class));
+                RegistUser();
+//                startActivity(new Intent(this, MainActivity.class));
                 break;
         }
     }
 
-    private void RegistUSer() {
-        String inputnama = nama.getText().toString().trim();
-        String inputgender = gender.getText().toString().trim();
-        String inputemail = email.getText().toString().trim();
-        String inputpass = password.getText().toString().trim();
+    private void RegistUser() {
+        String Name = nama.getText().toString().trim();
+        String Gender = gender.getText().toString().trim();
+        String Email = email.getText().toString().trim();
+        String Password = password.getText().toString().trim();
 
-        if(inputnama.isEmpty()){
+        if(Name.isEmpty()){
             nama.setError("Full Name is required");
             nama.requestFocus();
             return;
         }
 
-        if(inputgender.isEmpty()){
+        if(Gender.isEmpty()){
             gender.setError("Gender is required");
             gender.requestFocus();
             return;
         }
 
-        if(inputemail.isEmpty()){
+        if(Email.isEmpty()){
             email.setError("Email is required");
             email.requestFocus();
             return;
         }
 
-        if(!Patterns.EMAIL_ADDRESS.matcher(inputemail).matches()){
+        if(!Patterns.EMAIL_ADDRESS.matcher(Email).matches()){
             email.setError("Please provide valid email");
             email.requestFocus();
             return;
         }
 
-        if(inputpass.isEmpty()){
+        if(Password.isEmpty()){
             password.setError("Password is required");
             password.requestFocus();
             return;
         }
 
-        if(inputpass.length() <6 ){
+        if(Password.length() < 6 ){
             password.setError("Password should min 6 characters");
             password.requestFocus();
             return;
         }
+
+//        progressBar.setVisibility(View.GONE);
+        mAuth.createUserWithEmailAndPassword(Email, Password)
+                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isComplete()) {
+                            User user = new User(Name, Gender, Email);
+
+                            FirebaseDatabase.getInstance().getReference("users")
+                                    .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
+                                    .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                @Override
+                                public void onComplete(@NonNull Task<Void> task) {
+                                    if (task.isSuccessful()){
+                                        Toast.makeText(register.this, "User has been register successfully!", Toast.LENGTH_LONG).show();
+
+                                        startActivity(new Intent(register.this, MainActivity.class));
+                                    } else {
+                                        Toast.makeText(register.this, "User failed to register. Try Again!", Toast.LENGTH_LONG).show();
+
+                                    }
+                                }
+                            });
+                        } else {
+                            Toast.makeText(register.this, "User failed to register. Try Again!", Toast.LENGTH_LONG).show();
+                        }
+                    }
+                });
+
     }
 }
