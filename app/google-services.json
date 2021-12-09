@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "899017556248",
+    "project_id": "wisata-21826",
+    "storage_bucket": "wisata-21826.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:899017556248:android:138a8fa19ff71b1705de6d",
+        "android_client_info": {
+          "package_name": "com.example.wisata"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "899017556248-94ubu8cbu2sl3ghg61gcghq0qlmsniq1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqJ16LsT7BLAVLgJS2KlW-d29MikjJFgY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "899017556248-94ubu8cbu2sl3ghg61gcghq0qlmsniq1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
