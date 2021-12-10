@@ -8,7 +8,7 @@
     tools:context=".profile">
 
     <TextView
-        android:id="@+id/daftar"
+        android:id="@+id/greeting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
@@ -23,17 +23,17 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/profilImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/daftar"
+        app:layout_constraintTop_toBottomOf="@+id/greeting"
         app:srcCompat="@drawable/person" />
 
     <EditText
-        android:id="@+id/Password"
+        android:id="@+id/fullName"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginTop="24dp"
@@ -41,8 +41,6 @@
         android:drawableStart="@drawable/profil"
         android:ems="10"
         android:fontFamily="@font/quicksand_bold"
-        android:hint="Password"
-        android:inputType="textPassword"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
         android:textColor="#FFFFFF"
@@ -50,7 +48,7 @@
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/profilImage" />
 
     <EditText
         android:id="@+id/Gender"
@@ -61,7 +59,6 @@
         android:drawableStart="@drawable/gender"
         android:ems="10"
         android:fontFamily="@font/quicksand_bold"
-        android:hint="Gender"
         android:inputType="textPostalAddress"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
@@ -71,10 +68,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Password" />
+        app:layout_constraintTop_toBottomOf="@+id/fullName" />
 
     <EditText
-        android:id="@+id/Email"
+        android:id="@+id/emailAddress"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
@@ -82,7 +79,6 @@
         android:drawableStart="@drawable/email"
         android:ems="10"
         android:fontFamily="@font/quicksand_bold"
-        android:hint="Email Address"
         android:inputType="textEmailAddress"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
@@ -105,10 +101,10 @@
         app:backgroundTint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Email" />
+        app:layout_constraintTop_toBottomOf="@+id/emailAddress" />
 
     <Button
-        android:id="@+id/logout"
+        android:id="@+id/signout"
         android:layout_width="136dp"
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
