@@ -37,7 +37,7 @@
                 android:drawableStart="@drawable/gender"
                 android:ems="10"
                 android:fontFamily="@font/quicksand_bold"
-                android:hint="  Gender"
+                android:hint="  Gender (Pria atau Wanita)"
                 android:inputType="textPostalAddress"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
