@@ -167,6 +167,7 @@
         android:background="@drawable/input2"
         android:fontFamily="@font/quicksand_bold"
         android:text="Save"
+        android:onClick="Save"
         android:textColor="#000000"
         app:backgroundTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"

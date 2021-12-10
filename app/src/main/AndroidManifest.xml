@@ -28,25 +28,6 @@
             android:name=".profile"
             android:exported="false" />
         <activity android:name=".About" />
-        <activity android:name=".Kampoong" />
-        <activity android:name=".Pondok" />
-        <activity android:name=".Vihara" />
-        <activity android:name=".Gereja" />
-        <activity android:name=".Masjid" />
-        <activity android:name=".WisataReligi" />
-        <activity android:name=".WisataKuliner" />
-        <activity android:name=".Pustaka" />
-        <activity android:name=".KebunBinatang" />
-        <activity android:name=".Museum" />
-        <activity android:name=".WisataEdukasi" />
-        <activity android:name=".RiauFantasi" />
-        <activity android:name=".Okura" />
-        <activity android:name=".HutanRaya" />
-        <activity android:name=".AlamMayang" />
-        <activity android:name=".AirTerjun" />
-        <activity android:name=".WisataAlam" />
-        <activity android:name=".Danau" />
-        <activity android:name=".Alam" />
         <activity android:name=".MenuUtama" />
         <activity android:name=".MainActivity">
             <intent-filter>
