@@ -3,19 +3,44 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/UB/Tugas/Semester 5/Pemrograman Aplikasi Perangkat Bergerak/Wisata/Wisata/app/src/main/res/layout/activity_about.xml" value="0.2" />
-        <entry key="..\:/UB/Tugas/Semester 5/Pemrograman Aplikasi Perangkat Bergerak/Wisata/Wisata/app/src/main/res/layout/activity_login.xml" value="0.12183383991894631" />
-        <entry key="..\:/UB/Tugas/Semester 5/Pemrograman Aplikasi Perangkat Bergerak/Wisata/Wisata/app/src/main/res/layout/activity_menu_utama.xml" value="0.14375" />
-        <entry key="..\:/UB/Tugas/Semester 5/Pemrograman Aplikasi Perangkat Bergerak/Wisata/Wisata/app/src/main/res/layout/activity_register.xml" value="0.536" />
-        <entry key="..\:/UB/Tugas/Semester 5/Pemrograman Aplikasi Perangkat Bergerak/Wisata/Wisata/app/src/main/res/layout/activity_review.xml" value="4.0" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/Wisata/app/src/main/res/font/montserrat.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/Wisata/app/src/main/res/font/montserrat_subrayada.xml" value="0.3148148148148148" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/Wisata/app/src/main/res/font/quicksand.xml" value="0.3148148148148148" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/Wisata/app/src/main/res/font/quicksand_bold.xml" value="0.3148148148148148" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/Wisata/app/src/main/res/font/roboto.xml" value="0.3148148148148148" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_air_terjun.xml" value="0.29635416666666664" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_login.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_menu_utama.xml" value="0.29635416666666664" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_register.xml" value="0.33" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_update.xml" value="0.29635416666666664" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/Wisata/app/src/main/res/layout/add.xml" value="0.2957427536231884" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/Wisata/app/src/main/res/layout/data.xml" value="0.2957427536231884" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/Wisata/app/src/main/res/layout/login.xml" value="0.2957427536231884" />
+        <entry key="..\:/Users/Tiyah/AndroidStudioProjects/Wisata/app/src/main/res/font/montserrat_bold.xml" value="0.1" />
+        <entry key="..\:/Users/Tiyah/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_login.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/Tiyah/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_main.xml" value="0.13854166666666667" />
+        <entry key="..\:/Users/Tiyah/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_menu_utama.xml" value="0.13854166666666667" />
+        <entry key="..\:/Users/Tiyah/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_recycle_view.xml" value="0.13854166666666667" />
+        <entry key="..\:/Users/Tiyah/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_register.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/Tiyah/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_wisata_alam.xml" value="0.13854166666666667" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_about.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_add.xml" value="0.176" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_alam_mayang.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_update.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_add.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/Wisata/app/src/main/res/layout/menuutama.xml" value="0.22" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_about.xml" value="0.24818840579710144" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_add.xml" value="0.24818840579710144" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_hutan_raya.xml" value="0.24818840579710144" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_kebun_binatang.xml" value="0.24818840579710144" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_main.xml" value="0.3625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_profile.xml" value="0.3625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_recycle_view.xml" value="0.24818840579710144" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_register.xml" value="0.3625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_review.xml" value="0.33" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_update.xml" value="0.33" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_wisata_alam.xml" value="0.24818840579710144" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Wisata/app/src/main/res/layout/review.xml" value="0.3625" />
       </map>
     </option>
   </component>
