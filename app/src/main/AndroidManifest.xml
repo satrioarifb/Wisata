@@ -27,6 +27,8 @@
         <activity
             android:name=".profile"
             android:exported="false" />
+        <activity android:name=".About" />
+        <activity android:name=".MenuUtama" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

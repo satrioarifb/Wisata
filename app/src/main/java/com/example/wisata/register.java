@@ -9,9 +9,9 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.example.wisata.model.User;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -21,7 +21,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class register extends AppCompatActivity implements View.OnClickListener {
 
     private Button regist;
-    private EditText nama, gender, email, password;
+    private EditText nama, gender, email, password, confirmPass;
     private FirebaseAuth mAuth;
 
     @Override
@@ -38,6 +38,8 @@ public class register extends AppCompatActivity implements View.OnClickListener 
         gender = (EditText) findViewById(R.id.Gender);
         email = (EditText) findViewById(R.id.Email);
         password = (EditText) findViewById(R.id.Password);
+        confirmPass = (EditText) findViewById(R.id.Confirm);
+
 
     }
 
@@ -56,6 +58,7 @@ public class register extends AppCompatActivity implements View.OnClickListener 
         String Gender = gender.getText().toString().trim();
         String Email = email.getText().toString().trim();
         String Password = password.getText().toString().trim();
+        String Confirm = confirmPass.getText().toString().trim();
 
         if(Name.isEmpty()){
             nama.setError("Full Name is required");
@@ -91,6 +94,15 @@ public class register extends AppCompatActivity implements View.OnClickListener 
             password.setError("Password should min 6 characters");
             password.requestFocus();
             return;
+        }
+        if(Confirm.isEmpty()){
+            confirmPass.setError("Please confirm your Password");
+            confirmPass.requestFocus();
+            return;
+        }
+        if (!Password.equals(Confirm)){
+            confirmPass.setError("Your password doesn't match");
+            confirmPass.requestFocus();
         }
 
 //        progressBar.setVisibility(View.GONE);
