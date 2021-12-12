@@ -18,6 +18,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.wisata.model.Artikel;
+import com.example.wisata.model.Request;
 import com.example.wisata.model.User;
 
 public class add extends AppCompatActivity {
@@ -49,7 +50,7 @@ public class add extends AppCompatActivity {
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Save(judul.getText().toString(), lokasi.getText().toString(), rating.getText().toString(), review.getText().toString());
+                Save(judul.getText().toString(), lokasi.getText().toString(), rating.getText().toString(), review.getText().toString(), (Button) upload.getText());
                 Intent intent = new Intent(add.this, update.class);
                 startActivity(intent);
             }
@@ -63,13 +64,13 @@ public class add extends AppCompatActivity {
         imgHolder.setImageURI(uri);
     }
 
-    private void Save (String judul, String lokasi, String rating, String review){
-
-//        User user = new User(judul, lokasi, rating, review);
-//        user.judul = judul;
-//        user.lokasi = lokasi;
-//        user.rating = rating;
-//        user.review = review;
+    private void Save (String judul, String lokasi, String rating, String review, Button upload){
+        Request request = new Request(judul, lokasi, rating, review, upload);
+        request.judul = judul;
+        request.lokasi = lokasi;
+        request.rating = rating;
+        request.review = review;
+        request.upload = upload;
         finish();
     }
 
