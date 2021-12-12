@@ -3,6 +3,7 @@ package com.example.wisata.model;
 public class User {
     public String Name, Gender, Email;
 
+
     public User(){
     }
 

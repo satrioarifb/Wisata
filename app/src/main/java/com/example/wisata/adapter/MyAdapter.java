@@ -1,4 +1,4 @@
-package com.example.wisata.model;
+package com.example.wisata.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -6,19 +6,20 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
-
+import com.example.wisata.model.Request;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.wisata.R;
+import com.example.wisata.model.User;
 
 import java.util.ArrayList;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     Context context;
-    ArrayList<User> list;
+    ArrayList<Request> list;
 
-    public MyAdapter(Context context, ArrayList<User> list) {
+    public MyAdapter(Context context, ArrayList<Request> list) {
         this.context = context;
         this.list = list;
     }
@@ -32,11 +33,11 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-//        holder.judul.setText(this.list.get(position).judul);
-//        holder.lokasi.setText(this.list.get(position).lokasi);
-//        holder.rating.setText(this.list.get(position).rating);
-//        holder.review.setText(this.list.get(position).review);
-//        holder.upload.setOnClickListener(this.list.get(position).upload);
+        holder.judul.setText(this.list.get(position).judul);
+        holder.lokasi.setText(this.list.get(position).lokasi);
+        holder.rating.setText(this.list.get(position).rating);
+        holder.review.setText(this.list.get(position).review);
+        holder.upload.setOnClickListener((View.OnClickListener) this.list.get(position).upload);
     }
 
     @Override

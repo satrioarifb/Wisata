@@ -6,6 +6,9 @@ public class Request {
     public String judul, lokasi, rating, review;
     public Button upload;
 
+    public Request(){
+
+    }
     public Request(String judul, String lokasi, String rating, String review, Button upload){
         this.judul = judul;
         this.lokasi = lokasi;

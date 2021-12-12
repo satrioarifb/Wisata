@@ -4,7 +4,6 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -13,13 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 
-import java.text.SimpleDateFormat;
-import android.os.Bundle;
-import android.view.View;
-
-import com.example.wisata.model.Artikel;
 import com.example.wisata.model.Request;
-import com.example.wisata.model.User;
 
 public class add extends AppCompatActivity {
 
