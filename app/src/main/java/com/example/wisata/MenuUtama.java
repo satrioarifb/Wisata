@@ -43,26 +43,29 @@ public class MenuUtama extends AppCompatActivity implements View.OnClickListener
     }
 
     public void onClick(View view) {
+        Intent intent = new Intent(this, KategoriActivity.class);
+        String kategori = "";
         switch (view.getId()){
             case R.id.makanan:
-                startActivity(new Intent(this, wisata_kuliner.class));
+                kategori = "Makanan";
                 break;
             case R.id.Pantai:
-                startActivity(new Intent(this, pantai.class));
+                kategori = "Pantai";
                 break;
             case R.id.religi:
-                startActivity(new Intent(this, wisata_religi.class));
+                kategori = "Religi";
                 break;
             case R.id.kebun:
-                startActivity(new Intent(this, kebun.class));
+                kategori = "Kebun";
                 break;
             case R.id.tamanBermain:
-                startActivity(new Intent(this, taman_bermain.class));
+                kategori = "Taman Bermain";
                 break;
             case R.id.hotel:
-                startActivity(new Intent(this, hotel.class));
+                kategori = "Hotal";
                 break;
-
         }
+        intent.putExtra(KategoriActivity.EXTRA_CATEGORY, kategori);
+        startActivity(intent);
     }
 }

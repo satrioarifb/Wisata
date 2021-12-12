@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.wisata">
+    package="com.example.wisata" >
 
     <application
         android:allowBackup="true"
@@ -8,24 +8,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Wisata">
+        android:theme="@style/Theme.Wisata" >
         <activity
-            android:name=".taman_bermain"
-            android:exported="false" />
-        <activity
-            android:name=".kebun"
-            android:exported="false" />
-        <activity
-            android:name=".wisata_religi"
-            android:exported="false" />
-        <activity
-            android:name=".wisata_kuliner"
-            android:exported="false" />
-        <activity
-            android:name=".hotel"
-            android:exported="false" />
-        <activity
-            android:name=".pantai"
+            android:name=".KategoriActivity"
             android:exported="false" />
 
         <meta-data
@@ -34,9 +19,6 @@
 
         <activity
             android:name=".register"
-            android:exported="false" />
-        <activity
-            android:name=".recycle_view"
             android:exported="false" />
         <activity
             android:name=".login"
@@ -52,7 +34,7 @@
             android:exported="false" />
         <activity android:name=".About" />
         <activity android:name=".MenuUtama" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

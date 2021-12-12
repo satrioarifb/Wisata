@@ -5,7 +5,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
 import com.example.wisata.model.Request;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -17,27 +20,27 @@ import java.util.ArrayList;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     Context context;
-    ArrayList<Request> list;
+    ArrayList<Request> list = new ArrayList<>();
 
-    public MyAdapter(Context context, ArrayList<Request> list) {
+    public MyAdapter(Context context) {
         this.context = context;
+    }
+
+    public void setList(ArrayList<Request> list){
         this.list = list;
+        this.notifyDataSetChanged();
     }
 
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(context).inflate(R.layout.activity_wisata_kuliner, parent, false);
+        View v = LayoutInflater.from(context).inflate(R.layout.item_review, parent, false);
         return new MyViewHolder(v);
     }
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        holder.judul.setText(this.list.get(position).judul);
-        holder.lokasi.setText(this.list.get(position).lokasi);
-        holder.rating.setText(this.list.get(position).rating);
-        holder.review.setText(this.list.get(position).review);
-//        holder.upload.setOnClickListener((View.OnClickListener) this.list.get(position).upload);
+        holder.bind(list.get(position));
     }
 
     @Override
@@ -47,15 +50,23 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
         TextView judul, lokasi, rating, review;
-        Button upload;
+        ImageView gambar;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
-            judul = itemView.findViewById(R.id.judul);
-            lokasi = itemView.findViewById(R.id.lokasi);
-            rating = itemView.findViewById(R.id.rating);
-            review = itemView.findViewById(R.id.review);
-            upload = itemView.findViewById(R.id.upload);
+            judul = itemView.findViewById(R.id.txJudulR);
+            lokasi = itemView.findViewById(R.id.txLokasi);
+            rating = itemView.findViewById(R.id.isiRating);
+            review = itemView.findViewById(R.id.isiReview);
+            gambar = itemView.findViewById(R.id.imgReview);
+        }
+
+        public void bind(Request data){
+            judul.setText(data.judul);
+            lokasi.setText(data.lokasi);
+            rating.setText(data.rating);
+            review.setText(data.review);
+            Glide.with(itemView.getContext()).load(data.photoUrl).into(gambar);
         }
     }
 }
