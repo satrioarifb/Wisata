@@ -2,9 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/linearLayout3"
+    android:id="@+id/linearLayout4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".wisata_religi"
     android:background="#5AA48C">
 
     <TextView
@@ -13,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
         android:fontFamily="@font/quicksand_bold"
-        android:text="Wisata Kuliner"
+        android:text="Wisata Religi"
         android:textColor="#FFFFFF"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -67,7 +68,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.428"
-                app:srcCompat="@drawable/kuliner" />
+                app:srcCompat="@drawable/masjid" />
 
             <TextView
                 android:id="@+id/isiRating"
@@ -88,7 +89,7 @@
                 android:layout_marginStart="4dp"
                 android:layout_marginLeft="4dp"
                 android:fontFamily="@font/quicksand"
-                android:text="Dagingnya lembut ..."
+                android:text="Masjidnya bagus banget!"
                 android:textColor="@color/black"
                 app:layout_constraintStart_toEndOf="@+id/titikdua2"
                 app:layout_constraintTop_toTopOf="@+id/titikdua2" />
@@ -145,7 +146,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:fontFamily="@font/quicksand"
-                android:text="Batu, Malang"
+                android:text="Jawa Timur"
                 android:textColor="@color/black"
                 app:layout_constraintStart_toStartOf="@+id/txJudulR"
                 app:layout_constraintTop_toBottomOf="@+id/txJudulR" />
@@ -158,7 +159,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/quicksand_bold"
-                android:text="Sate Kelinci"
+                android:text="Masjid Tiban Turen"
                 android:textColor="@color/black"
                 app:layout_constraintStart_toEndOf="@+id/imgReview"
                 app:layout_constraintTop_toTopOf="parent" />

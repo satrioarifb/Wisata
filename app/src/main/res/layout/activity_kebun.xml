@@ -2,9 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/linearLayout4"
+    android:id="@+id/linearLayout3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".kebun"
     android:background="#5AA48C">
 
     <TextView
@@ -13,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
         android:fontFamily="@font/quicksand_bold"
-        android:text="Wisata Religi"
+        android:text="Kebun"
         android:textColor="#FFFFFF"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -67,7 +68,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.428"
-                app:srcCompat="@drawable/masjid" />
+                app:srcCompat="@drawable/kebun" />
 
             <TextView
                 android:id="@+id/isiRating"
@@ -88,7 +89,7 @@
                 android:layout_marginStart="4dp"
                 android:layout_marginLeft="4dp"
                 android:fontFamily="@font/quicksand"
-                android:text="Masjidnya bagus banget!"
+                android:text="Pantainya bagus banget!"
                 android:textColor="@color/black"
                 app:layout_constraintStart_toEndOf="@+id/titikdua2"
                 app:layout_constraintTop_toTopOf="@+id/titikdua2" />
@@ -158,7 +159,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/quicksand_bold"
-                android:text="Masjid Tiban Turen"
+                android:text="Batu Love Garden"
                 android:textColor="@color/black"
                 app:layout_constraintStart_toEndOf="@+id/imgReview"
                 app:layout_constraintTop_toTopOf="parent" />

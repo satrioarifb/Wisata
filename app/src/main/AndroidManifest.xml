@@ -9,6 +9,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Wisata">
+        <activity
+            android:name=".taman_bermain"
+            android:exported="false" />
+        <activity
+            android:name=".kebun"
+            android:exported="false" />
+        <activity
+            android:name=".wisata_religi"
+            android:exported="false" />
+        <activity
+            android:name=".wisata_kuliner"
+            android:exported="false" />
+        <activity
+            android:name=".hotel"
+            android:exported="false" />
+        <activity
+            android:name=".pantai"
+            android:exported="false" />
+
         <meta-data
             android:name="com.google.android.actions"
             android:resource="@xml/actions" />
