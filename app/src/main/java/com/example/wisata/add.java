@@ -65,11 +65,11 @@ public class add extends AppCompatActivity {
 
     private void Save (String judul, String lokasi, String rating, String review){
 
-        User user = new User(judul, lokasi, rating, review);
-        user.judul = judul;
-        user.lokasi = lokasi;
-        user.rating = rating;
-        user.review = review;
+//        User user = new User(judul, lokasi, rating, review);
+//        user.judul = judul;
+//        user.lokasi = lokasi;
+//        user.rating = rating;
+//        user.review = review;
         finish();
     }
 

@@ -96,7 +96,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="48dp"
         android:background="@drawable/btncreate"
-        android:text="Edit"
+        android:text="Reset Password"
         android:textColor="#000000"
         app:backgroundTint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
