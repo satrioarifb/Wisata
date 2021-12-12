@@ -43,7 +43,7 @@ public class add extends AppCompatActivity {
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Save(judul.getText().toString(), lokasi.getText().toString(), rating.getText().toString(), review.getText().toString(), (Button) upload.getText());
+                Save(judul.getText().toString(), lokasi.getText().toString(), rating.getText().toString(), review.getText().toString());
                 Intent intent = new Intent(add.this, update.class);
                 startActivity(intent);
             }
@@ -57,13 +57,13 @@ public class add extends AppCompatActivity {
         imgHolder.setImageURI(uri);
     }
 
-    private void Save (String judul, String lokasi, String rating, String review, Button upload){
-        Request request = new Request(judul, lokasi, rating, review, upload);
+    private void Save (String judul, String lokasi, String rating, String review){
+        Request request = new Request(judul, lokasi, rating, review);
         request.judul = judul;
         request.lokasi = lokasi;
         request.rating = rating;
         request.review = review;
-        request.upload = upload;
+//        request.upload = upload;
         finish();
     }
 

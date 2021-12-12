@@ -19,41 +19,4 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 
 public class About extends Activity {
-    public static class Artikel extends AppCompatActivity {
-        RecyclerView recyclerView;
-        DatabaseReference database;
-        MyAdapter myAdapter;
-        ArrayList<Request> list;
-
-        @Override
-        protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_recycle_view);
-
-            recyclerView = findViewById(R.id.kulinerList);
-            database = FirebaseDatabase.getInstance().getReference("Kuliner");
-            recyclerView.setHasFixedSize(true);
-            recyclerView.setLayoutManager(new LinearLayoutManager(this));;
-
-            list = new ArrayList<>();
-            myAdapter = new MyAdapter(this, list);
-            recyclerView.setAdapter(myAdapter);
-
-            database.addValueEventListener(new ValueEventListener(){
-                @Override
-                public void onDataChange(@NonNull DataSnapshot snapshot) {
-                    for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
-                        Request req = dataSnapshot.getValue(Request.class);
-                        list.add(req);
-                    }
-                    myAdapter.notifyDataSetChanged();
-                }
-
-                @Override
-                public void onCancelled(@NonNull DatabaseError error) {
-
-                }
-            });
-        }
-    }
 }

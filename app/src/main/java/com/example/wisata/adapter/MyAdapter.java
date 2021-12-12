@@ -37,7 +37,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         holder.lokasi.setText(this.list.get(position).lokasi);
         holder.rating.setText(this.list.get(position).rating);
         holder.review.setText(this.list.get(position).review);
-        holder.upload.setOnClickListener((View.OnClickListener) this.list.get(position).upload);
+//        holder.upload.setOnClickListener((View.OnClickListener) this.list.get(position).upload);
     }
 
     @Override
