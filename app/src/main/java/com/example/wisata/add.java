@@ -1,5 +1,6 @@
 package com.example.wisata;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,8 +12,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.example.wisata.model.Request;
+import com.example.wisata.model.User;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class add extends AppCompatActivity {
 
@@ -21,11 +29,13 @@ public class add extends AppCompatActivity {
     ImageView imgHolder;
 
     private static final int REQUEST_PICK_PHOTO = 1;
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add);
+        mAuth = FirebaseAuth.getInstance();
         judul = (EditText) findViewById(R.id.judul);
         lokasi = (EditText) findViewById(R.id.lokasi);
         rating = (EditText) findViewById(R.id.rating);
@@ -65,6 +75,22 @@ public class add extends AppCompatActivity {
         request.review = review;
 //        request.upload = upload;
         finish();
+
+    FirebaseDatabase.getInstance().getReference("review")
+            .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
+            .setValue(request).addOnCompleteListener(new OnCompleteListener<Void>() {
+        @Override
+        public void onComplete(@NonNull Task<Void> task) {
+            if (task.isSuccessful()){
+                Toast.makeText(add.this, "Data berhasil disimpan", Toast.LENGTH_LONG).show();
+
+                startActivity(new Intent(add.this, MainActivity.class));
+            } else {
+                Toast.makeText(add.this, "Data gagal disimpan, coba lagi!", Toast.LENGTH_LONG).show();
+
+            }
+        }
+    });
     }
 
 //    public void Save(View v) {

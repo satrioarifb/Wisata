@@ -32,7 +32,6 @@ public class Artikel extends AppCompatActivity {
         database = FirebaseDatabase.getInstance().getReference("Kuliner");
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        ;
 
         list = new ArrayList<>();
         myAdapter = new MyAdapter(this, list);
@@ -42,8 +41,8 @@ public class Artikel extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
-                    Request req = dataSnapshot.getValue(Request.class);
-                    list.add(req);
+                    Request request = dataSnapshot.getValue(Request.class);
+                    list.add(request);
                 }
                 myAdapter.notifyDataSetChanged();
             }
