@@ -17,6 +17,7 @@ public class MenuUtama extends AppCompatActivity implements View.OnClickListener
     private ImageView kebun;
     private ImageView tamanbermain;
     private ImageView hotel;
+    private ImageView profil;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,11 +41,20 @@ public class MenuUtama extends AppCompatActivity implements View.OnClickListener
 
         hotel = (ImageView) findViewById(R.id.hotel);
         hotel.setOnClickListener((View.OnClickListener) this);
+
+        profil = (ImageView) findViewById(R.id.profil);
+        profil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MenuUtama.this, profile.class));
+            }
+        });
     }
 
     public void onClick(View view) {
         Intent intent = new Intent(this, KategoriActivity.class);
         String kategori = "";
+
         switch (view.getId()){
             case R.id.makanan:
                 kategori = "Makanan";
@@ -67,5 +77,6 @@ public class MenuUtama extends AppCompatActivity implements View.OnClickListener
         }
         intent.putExtra(KategoriActivity.EXTRA_CATEGORY, kategori);
         startActivity(intent);
+
     }
 }
