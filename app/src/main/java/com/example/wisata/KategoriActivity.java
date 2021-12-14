@@ -57,13 +57,16 @@ public class KategoriActivity extends AppCompatActivity {
         @Override
         public void onDataChange(@NonNull DataSnapshot snapshot) {
             ArrayList<Request> result = new ArrayList<>();
-            for(DataSnapshot data: snapshot.getChildren()){
-                result.add(data.getValue(Request.class));
+            for (DataSnapshot data : snapshot.getChildren()) {
+                Request request = data.getValue(Request.class);
+                request.setKey(data.getKey());
+                result.add(request);
             }
             adapter.setList(result);
         }
 
         @Override
-        public void onCancelled(@NonNull DatabaseError error) {}
+        public void onCancelled(@NonNull DatabaseError error) {
+        }
     };
 }

@@ -1,7 +1,7 @@
 package com.example.wisata.model;
 
 public class Request {
-    public String judul, lokasi, rating, review, photoUrl, kategori;
+    public String judul, lokasi, rating, review, photoUrl, kategori, key;
 
     public Request(){
 
@@ -16,4 +16,7 @@ public class Request {
         this.kategori = kategori;
     }
 
+    public void setKey(String key) {
+        this.key = key;
+    }
 }

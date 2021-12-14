@@ -53,19 +53,25 @@ public class add extends AppCompatActivity {
         });
 
         save.setOnClickListener(v -> {
-            Save(judul.getText().toString(),
-                    lokasi.getText().toString(),
-                    rating.getText().toString(),
-                    review.getText().toString(),
-                    kategori);
+            if (photo != null) {
+                Save(judul.getText().toString(),
+                        lokasi.getText().toString(),
+                        rating.getText().toString(),
+                        review.getText().toString(),
+                        kategori);
+            } else {
+                Toast.makeText(this, "Foto tidak boleh kosong", Toast.LENGTH_SHORT).show();
+            }
         });
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        photo = data.getData();
-        imgHolder.setImageURI(photo);
+        if (data != null) {
+            photo = data.getData();
+            imgHolder.setImageURI(photo);
+        }
     }
 
     private void Save(String judul, String lokasi, String rating, String review, String kategori) {
