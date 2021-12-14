@@ -13,43 +13,16 @@
 
         <TextView
             android:id="@+id/txHalo"
-            android:layout_width="83dp"
+            android:layout_width="280dp"
             android:layout_height="46dp"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="48dp"
             android:fontFamily="@font/montserrat_bold"
-            android:text="Halo"
             android:textColor="@color/white"
             android:textSize="34sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/txNama"
-            android:layout_width="112dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="4dp"
-            android:layout_marginLeft="4dp"
-            android:fontFamily="@font/montserrat_bold"
-            android:text="Nama "
-            android:textColor="@color/white"
-            android:textSize="34sp"
-            app:layout_constraintStart_toEndOf="@+id/txKoma"
-            app:layout_constraintTop_toTopOf="@+id/txKoma" />
-
-        <TextView
-            android:id="@+id/txKoma"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
-            android:layout_marginLeft="4dp"
-            android:fontFamily="@font/montserrat_bold"
-            android:text=","
-            android:textColor="@color/white"
-            android:textSize="34sp"
-            app:layout_constraintStart_toEndOf="@+id/txHalo"
-            app:layout_constraintTop_toTopOf="@+id/txHalo" />
 
         <TextView
             android:id="@+id/decs"
