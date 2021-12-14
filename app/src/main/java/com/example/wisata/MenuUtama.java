@@ -72,7 +72,7 @@ public class MenuUtama extends AppCompatActivity implements View.OnClickListener
                 kategori = "Taman Bermain";
                 break;
             case R.id.hotel:
-                kategori = "Hotal";
+                kategori = "Hotel";
                 break;
         }
         intent.putExtra(KategoriActivity.EXTRA_CATEGORY, kategori);

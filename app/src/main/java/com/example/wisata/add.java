@@ -13,7 +13,6 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.wisata.model.Request;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
@@ -46,7 +45,7 @@ public class add extends AppCompatActivity {
         review = (EditText) findViewById(R.id.review);
         imgHolder = (ImageView) findViewById(R.id.imgHolder);
         upload = (Button) findViewById(R.id.upload);
-        save = (Button) findViewById(R.id.save);
+        save = (Button) findViewById(R.id.update);
 
         upload.setOnClickListener(v -> {
             Intent galleryIntent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);

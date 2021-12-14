@@ -17,13 +17,13 @@
         app:layout_constraintTop_toBottomOf="@+id/tulisReview">
 
         <TextView
-            android:id="@+id/txtNamaMak"
+            android:id="@+id/txtNama"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
             android:layout_marginTop="10sp"
             android:fontFamily="@font/quicksand"
-            android:text="Nama Makanan"
+            android:text="Nama"
             android:textColor="#FFFFFF" />
 
         <EditText
@@ -160,13 +160,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/save"
+        android:id="@+id/update"
         android:layout_width="100dp"
         android:layout_height="48dp"
         android:layout_marginBottom="32dp"
         android:background="@drawable/input2"
         android:fontFamily="@font/quicksand_bold"
-        android:text="Save"
+        android:text="Update"
         android:textColor="#000000"
         app:backgroundTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
