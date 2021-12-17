@@ -53,29 +53,6 @@ public class add extends AppCompatActivity {
         });
 
         save.setOnClickListener(v -> {
-            if(judul != null){
-                judul.setError("Judul is required");
-                judul.requestFocus();
-                return;
-            }
-
-            if(lokasi != null){
-                lokasi.setError("Lokasi is required");
-                lokasi.requestFocus();
-                return;
-            }
-
-            if(rating != null){
-                rating.setError("Rating is required");
-                rating.requestFocus();
-                return;
-            }
-
-            if(review != null){
-                review.setError("Review is required");
-                review.requestFocus();
-                return;
-            }
 
             if (photo != null) {
                 Save(judul.getText().toString(),
@@ -88,6 +65,7 @@ public class add extends AppCompatActivity {
             }
         });
     }
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
