@@ -39,8 +39,6 @@ public class register extends AppCompatActivity implements View.OnClickListener 
         email = (EditText) findViewById(R.id.Email);
         password = (EditText) findViewById(R.id.Password);
         confirmPass = (EditText) findViewById(R.id.Confirm);
-
-
     }
 
     @Override
@@ -48,7 +46,6 @@ public class register extends AppCompatActivity implements View.OnClickListener 
         switch (view.getId()){
             case R.id.btnDaftar:
                 RegistUser();
-//                startActivity(new Intent(this, MainActivity.class));
                 break;
         }
     }
@@ -105,7 +102,6 @@ public class register extends AppCompatActivity implements View.OnClickListener 
             confirmPass.requestFocus();
         }
 
-//        progressBar.setVisibility(View.GONE);
         mAuth.createUserWithEmailAndPassword(Email, Password)
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override

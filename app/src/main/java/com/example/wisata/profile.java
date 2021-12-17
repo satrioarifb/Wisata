@@ -42,14 +42,6 @@ public class profile extends AppCompatActivity implements View.OnClickListener{
         logout = (Button) findViewById(R.id.signout);
         logout.setOnClickListener(this);
 
-//        logout.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                FirebaseAuth.getInstance().signOut();
-//                startActivity(new Intent(profile.this, MainActivity.class));
-//            }
-//        });
-
         user = FirebaseAuth.getInstance().getCurrentUser();
         reference = FirebaseDatabase.getInstance().getReference("users");
         userID = user.getUid();
