@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -47,44 +48,58 @@ public class add extends AppCompatActivity {
         upload = (Button) findViewById(R.id.upload);
         save = (Button) findViewById(R.id.update);
 
-        upload.setOnClickListener(v -> {
+        upload.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
             Intent galleryIntent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
             startActivityForResult(galleryIntent, REQUEST_PICK_PHOTO);
+            }
         });
 
-        save.setOnClickListener(v -> {
-            if(judul != null){
-                judul.setError("Judul is required");
-                judul.requestFocus();
-                return;
+        save.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                saveReview();
             }
 
-            if(lokasi != null){
-                lokasi.setError("Lokasi is required");
-                lokasi.requestFocus();
-                return;
-            }
+            private void saveReview() {
+                String title = judul.getText().toString().trim();
+                String location = lokasi.getText().toString().trim();
+                String rate = rating.getText().toString().trim();
+                String reviews = review.getText().toString().trim();
+                if(title.isEmpty()){
+                    judul.setError("Judul is required");
+                    judul.requestFocus();
+                    return;
+                }
 
-            if(rating != null){
-                rating.setError("Rating is required");
-                rating.requestFocus();
-                return;
-            }
+                if(location.isEmpty()){
+                    lokasi.setError("Lokasi is required");
+                    lokasi.requestFocus();
+                    return;
+                }
 
-            if(review != null){
-                review.setError("Review is required");
-                review.requestFocus();
-                return;
-            }
+                if(rate.isEmpty()){
+                    rating.setError("Rating is required");
+                    rating.requestFocus();
+                    return;
+                }
 
-            if (photo != null) {
-                Save(judul.getText().toString(),
-                        lokasi.getText().toString(),
-                        rating.getText().toString(),
-                        review.getText().toString(),
-                        kategori);
-            } else {
-                Toast.makeText(this, "Photo is required", Toast.LENGTH_SHORT).show();
+                if(reviews.isEmpty()){
+                    review.setError("Review is required");
+                    review.requestFocus();
+                    return;
+                }
+
+                if (photo != null) {
+                    Save(judul.getText().toString(),
+                            lokasi.getText().toString(),
+                            rating.getText().toString(),
+                            review.getText().toString(),
+                            kategori);
+                } else {
+                    Toast.makeText(add.this, "Photo is required", Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }
