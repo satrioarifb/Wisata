@@ -3,12 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Project/ITARSI-Codebase/Wisata/app/src/main/res/layout/activity_add.xml" value="0.1" />
-        <entry key="..\:/Project/ITARSI-Codebase/Wisata/app/src/main/res/layout/activity_kategori.xml" value="0.22" />
-        <entry key="..\:/Project/ITARSI-Codebase/Wisata/app/src/main/res/layout/activity_register.xml" value="0.1140625" />
-        <entry key="..\:/Project/ITARSI-Codebase/Wisata/app/src/main/res/layout/activity_update.xml" value="0.25" />
-        <entry key="..\:/Project/ITARSI-Codebase/Wisata/app/src/main/res/layout/item_review.xml" value="0.33" />
-        <entry key="..\:/Project/ITARSI-Codebase/Wisata/app/src/main/res/layout/menuutama.xml" value="0.1140625" />
+        <entry key="..\:/UB/Tugas/Semester 5/Pemrograman Aplikasi Perangkat Bergerak/Wisata/Wisata/app/src/main/res/drawable/input.xml" value="0.290625" />
+        <entry key="..\:/UB/Tugas/Semester 5/Pemrograman Aplikasi Perangkat Bergerak/Wisata/Wisata/app/src/main/res/drawable/input3.xml" value="0.290625" />
+        <entry key="..\:/UB/Tugas/Semester 5/Pemrograman Aplikasi Perangkat Bergerak/Wisata/Wisata/app/src/main/res/layout/activity_forgot_password.xml" value="0.536" />
         <entry key="..\:/UB/Tugas/Semester 5/Pemrograman Aplikasi Perangkat Bergerak/Wisata/Wisata/app/src/main/res/layout/activity_add.xml" value="0.22916666666666666" />
         <entry key="..\:/UB/Tugas/Semester 5/Pemrograman Aplikasi Perangkat Bergerak/Wisata/Wisata/app/src/main/res/layout/activity_hotel.xml" value="0.14375" />
         <entry key="..\:/UB/Tugas/Semester 5/Pemrograman Aplikasi Perangkat Bergerak/Wisata/Wisata/app/src/main/res/layout/activity_kebun.xml" value="0.14375" />
@@ -17,6 +14,7 @@
         <entry key="..\:/UB/Tugas/Semester 5/Pemrograman Aplikasi Perangkat Bergerak/Wisata/Wisata/app/src/main/res/layout/activity_pantai.xml" value="0.14375" />
         <entry key="..\:/UB/Tugas/Semester 5/Pemrograman Aplikasi Perangkat Bergerak/Wisata/Wisata/app/src/main/res/layout/activity_profile.xml" value="0.2223731884057971" />
         <entry key="..\:/UB/Tugas/Semester 5/Pemrograman Aplikasi Perangkat Bergerak/Wisata/Wisata/app/src/main/res/layout/activity_taman_bermain.xml" value="0.14375" />
+        <entry key="..\:/UB/Tugas/Semester 5/Pemrograman Aplikasi Perangkat Bergerak/Wisata/Wisata/app/src/main/res/layout/activity_update.xml" value="0.24728260869565216" />
         <entry key="..\:/UB/Tugas/Semester 5/Pemrograman Aplikasi Perangkat Bergerak/Wisata/Wisata/app/src/main/res/layout/activity_wisata_kuliner.xml" value="0.14375" />
         <entry key="..\:/UB/Tugas/Semester 5/Pemrograman Aplikasi Perangkat Bergerak/Wisata/Wisata/app/src/main/res/layout/activity_wisata_religi.xml" value="0.1296875" />
         <entry key="..\:/UB/Tugas/Semester 5/Pemrograman Aplikasi Perangkat Bergerak/Wisata/Wisata/app/src/main/res/layout/layout_hotel.xml" value="0.14375" />
@@ -39,6 +37,15 @@
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/Wisata/app/src/main/res/layout/add.xml" value="0.2957427536231884" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/Wisata/app/src/main/res/layout/data.xml" value="0.2957427536231884" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/Wisata/app/src/main/res/layout/login.xml" value="0.2957427536231884" />
+        <entry key="..\:/Users/Ibrahimsyah Z/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_add.xml" value="0.25" />
+        <entry key="..\:/Users/Ibrahimsyah Z/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_add2.xml" value="0.25" />
+        <entry key="..\:/Users/Ibrahimsyah Z/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_kategori.xml" value="0.152" />
+        <entry key="..\:/Users/Ibrahimsyah Z/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Ibrahimsyah Z/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_update.xml" value="0.12708333333333333" />
+        <entry key="..\:/Users/Ibrahimsyah Z/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_wisata_kuliner.xml" value="0.12708333333333333" />
+        <entry key="..\:/Users/Ibrahimsyah Z/AndroidStudioProjects/Wisata/app/src/main/res/layout/item_review.xml" value="0.264" />
+        <entry key="..\:/Users/Ibrahimsyah Z/AndroidStudioProjects/Wisata/app/src/main/res/layout/layout_pantai.xml" value="0.11302083333333333" />
+        <entry key="..\:/Users/Ibrahimsyah Z/AndroidStudioProjects/Wisata/app/src/main/res/layout/menuutama.xml" value="0.1" />
         <entry key="..\:/Users/Tiyah/AndroidStudioProjects/Wisata/app/src/main/res/drawable/bg_menu.xml" value="0.1" />
         <entry key="..\:/Users/Tiyah/AndroidStudioProjects/Wisata/app/src/main/res/font/montserrat_bold.xml" value="0.1" />
         <entry key="..\:/Users/Tiyah/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_login.xml" value="0.3333333333333333" />
@@ -61,9 +68,12 @@
         <entry key="..\:/Users/hp/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_add.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/Wisata/app/src/main/res/layout/menuutama.xml" value="0.22" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_about.xml" value="0.24818840579710144" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_add.xml" value="0.24818840579710144" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_add.xml" value="0.33" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_edit.xml" value="0.33469202898550726" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_hutan_raya.xml" value="0.24818840579710144" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_kategori.xml" value="0.22" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_kebun_binatang.xml" value="0.24818840579710144" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_login.xml" value="0.24094202898550723" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_main.xml" value="0.3625" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_profile.xml" value="0.3625" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_recycle_view.xml" value="0.24818840579710144" />
@@ -71,6 +81,12 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_review.xml" value="0.33" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_update.xml" value="0.33" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Wisata/app/src/main/res/layout/activity_wisata_alam.xml" value="0.24818840579710144" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Wisata/app/src/main/res/layout/item_review.xml" value="0.33469202898550726" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Wisata/app/src/main/res/layout/layout_hotel.xml" value="0.24094202898550723" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Wisata/app/src/main/res/layout/layout_kebun.xml" value="0.24094202898550723" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Wisata/app/src/main/res/layout/layout_religi.xml" value="0.24094202898550723" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Wisata/app/src/main/res/layout/layout_taman_bermain.xml" value="0.24094202898550723" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Wisata/app/src/main/res/layout/menuutama.xml" value="0.24094202898550723" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Wisata/app/src/main/res/layout/review.xml" value="0.3625" />
       </map>
     </option>

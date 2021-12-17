@@ -53,6 +53,30 @@ public class add extends AppCompatActivity {
         });
 
         save.setOnClickListener(v -> {
+            if(judul != null){
+                judul.setError("Judul is required");
+                judul.requestFocus();
+                return;
+            }
+
+            if(lokasi != null){
+                lokasi.setError("Lokasi is required");
+                lokasi.requestFocus();
+                return;
+            }
+
+            if(rating != null){
+                rating.setError("Rating is required");
+                rating.requestFocus();
+                return;
+            }
+
+            if(review != null){
+                review.setError("Review is required");
+                review.requestFocus();
+                return;
+            }
+
             if (photo != null) {
                 Save(judul.getText().toString(),
                         lokasi.getText().toString(),
@@ -60,7 +84,7 @@ public class add extends AppCompatActivity {
                         review.getText().toString(),
                         kategori);
             } else {
-                Toast.makeText(this, "Foto tidak boleh kosong", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Photo is required", Toast.LENGTH_SHORT).show();
             }
         });
     }
