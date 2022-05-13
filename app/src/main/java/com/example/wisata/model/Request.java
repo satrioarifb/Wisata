@@ -1,20 +1,22 @@
 package com.example.wisata.model;
 
-import android.widget.Button;
-
 public class Request {
-    public String judul, lokasi, rating, review;
-   // public Button upload;
+    public String judul, lokasi, rating, review, photoUrl, kategori, key;
 
     public Request(){
 
     }
-    public Request(String judul, String lokasi, String rating, String review){
+
+    public Request(String judul, String lokasi, String rating, String review, String photoUrl, String kategori){
         this.judul = judul;
         this.lokasi = lokasi;
         this.rating = rating;
         this.review = review;
-       // this.upload = upload;
+        this.photoUrl = photoUrl;
+        this.kategori = kategori;
     }
 
+    public void setKey(String key) {
+        this.key = key;
+    }
 }

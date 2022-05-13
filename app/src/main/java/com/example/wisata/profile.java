@@ -20,7 +20,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class profile extends AppCompatActivity {
+public class profile extends AppCompatActivity implements View.OnClickListener{
 
     private FirebaseUser user;
     private DatabaseReference reference;
@@ -28,7 +28,7 @@ public class profile extends AppCompatActivity {
     private String userID;
 
 
-    private Button logout;
+    private Button logout, forgotPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,16 +36,11 @@ public class profile extends AppCompatActivity {
         setContentView(R.layout.activity_profile);
 
 
+        forgotPassword = (Button) findViewById(R.id.forgotPassword);
+        forgotPassword.setOnClickListener(this);
 
         logout = (Button) findViewById(R.id.signout);
-
-        logout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                FirebaseAuth.getInstance().signOut();
-                startActivity(new Intent(profile.this, MainActivity.class));
-            }
-        });
+        logout.setOnClickListener(this);
 
         user = FirebaseAuth.getInstance().getCurrentUser();
         reference = FirebaseDatabase.getInstance().getReference("users");
@@ -77,5 +72,18 @@ public class profile extends AppCompatActivity {
                 Toast.makeText(profile.this, "Something wrong happened!", Toast.LENGTH_LONG).show();
             }
         });
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.forgotPassword:
+                startActivity(new Intent(profile.this, ForgotPassword.class));
+                break;
+            case R.id.signout:
+                FirebaseAuth.getInstance().signOut();
+                startActivity(new Intent(profile.this, MainActivity.class));
+                break;
+        }
     }
 }
